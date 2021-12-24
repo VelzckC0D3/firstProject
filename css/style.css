@@ -1,20 +1,48 @@
+:root{
+    --darkBrown: #2b1500;
+    --white: #ffffff;
+    --black: #000000;
+    --beige: #bfa180;
+    --lightOrange: #eaad70;
+}
+
 html{
     font-size: 62.5%;
 }
 
 body{
     font-size: 16px;
+    font-family: 'Oswald', sans-serif;
 }
 
 .tittle {
     text-align: center;
     font-size: 3.8rem;
+    font-weight: bold;
 }
 
 .tittle span {
     font-size: 2rem;
 }
 
-.menu {
-    text-align: center;
+.pNavigation {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
 }
+
+.nav-bg{
+    background-color: var(--beige);
+}
+
+.cont {
+    width: 120rem;
+    margin: 0 auto;
+}
+
+.pNavigation a {
+
+    color: var(--white);
+    text-decoration: none;
+}
+
