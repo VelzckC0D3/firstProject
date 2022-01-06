@@ -13,7 +13,7 @@ html {
 
 *, *:before, *:after {
     box-sizing: inherit;
-  }
+}
 
 body {
     font-size: 16px;
@@ -26,7 +26,7 @@ body {
     font-weight: bold;
 }
 
-.tittle span {
+.cont .cont-hero span {
     font-size: 2rem;
 }
 
@@ -62,6 +62,10 @@ body {
 .pNavigation a:hover {
     background-color: var(--lightOrange);
     color: var(--darkBrown);
+    -webkit-transition: background-color 200ms linear, color 200ms;
+    -ms-transition: background-color 200ms linear, color 200ms;
+    transition: background-color 200ms linear, color 200ms;
+    
 }
 
 
@@ -69,5 +73,48 @@ body {
     background-image: url(../imgs/desk.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 2.5rem;
+    height: 35rem;
+    position: relative;
+}
+
+.hero .cont-hero .tittle {
+    color: var(--white);
+    text-shadow: -4px 2px 12px #00000049;
+}
+
+.cont-hero {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1px;
+}
+
+.cont-hero h2,
+.cont-hero p {
+    color: whitesmoke;
+}
+
+.cont-hero a {
+    text-decoration: none;
+    background-color: var(--lightOrange);
+    border-radius: 9px;
+    padding: 6px;
+    color: whitesmoke;
+    font-size: 16px;
+    -webkit-transition: color 300ms linear, padding 500ms, font-size 500ms;
+    -ms-transition: color 300ms linear, padding 500ms, font-size 500ms;
+    transition: color 300ms linear, padding 500ms, font-size 500ms;
+}
+
+.cont-hero a:hover {
+    color: black;
+    padding: 8px 13px;
+    font-size: 2rem;
+
 }
