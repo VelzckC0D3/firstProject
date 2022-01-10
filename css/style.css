@@ -119,14 +119,13 @@ footer {
     color: whitesmoke;
     font-size: 16px;
     text-transform: uppercase;
-    transition: color 300ms linear, padding 500ms, font-size 500ms;
+   transition: all 400ms;
     width: 70%;
 }
 
 .cont-hero a:hover {
     color: black;
-    padding: 8px 13px;
-    font-size: 2rem;
+    transform: scale(1.3);
 }
 
 @media (min-width: 480px) {
@@ -188,7 +187,7 @@ footer {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    transition: background-color 300ms linear, box-shadow 300ms, font-size 300ms, padding 300ms;
+   transition: all 300ms;
 }
 
 .sbc:hover{
@@ -196,11 +195,22 @@ footer {
     -webkit-box-shadow: 0px 0px 25px -2px #000000;
     box-shadow: 0px 0px 25px -2px #00000059;
     border-radius: 1rem;
+    transform: scale(1.1);
 }
 
 .sbc p {
     line-height: 1.35;
 }
+
+.svc:hover .sbc{
+    filter: blur(1px);
+}
+
+.svc .sbc:hover{
+    filter: blur(0);
+}
+
+
 
 
 .sbc h3 {}
@@ -249,13 +259,13 @@ footer {
     background-color: var(--lightOrange);
     padding: 0.5rem 1rem;
     text-transform: uppercase;
-    transition: color 300ms linear, padding 500ms, font-size 500ms;
+    transition: all 300ms;
 }
 
 .btn:hover {
     color: black;
-    font-size: 17px;
     cursor: pointer;
+    transform: scale(1.1);
    }
 
 .ipt {
